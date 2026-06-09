@@ -6,6 +6,7 @@ import PriceTable from './components/PriceTable'
 import MobileCardView from './components/MobileCardView'
 import LastUpdatedBanner from './components/LastUpdatedBanner'
 import AdminEditModal from './components/AdminEditModal'
+import SummaryStats from './components/SummaryStats'
 import { useLocalStorage } from './hooks/useLocalStorage'
 import { useWindowSize } from './hooks/useWindowSize'
 
@@ -128,6 +129,12 @@ export default function App() {
 
       <main className="max-w-7xl mx-auto px-4 py-6 space-y-4">
         <LastUpdatedBanner date={pricesData.lastUpdated} />
+
+        <SummaryStats
+          services={pricesData.services}
+          providers={pricesData.providers}
+          overrides={overrides}
+        />
 
         <FilterBar
           categories={categories}
