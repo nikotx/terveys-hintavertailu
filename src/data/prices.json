@@ -1,0 +1,1422 @@
+{
+  "lastUpdated": "2026-06-09",
+  "kelaNote": "Kela ei enää korvaa yksityislääkärikäyntejä vuodesta 2024 alkaen. Omavastuulaskuri laskee vakuutus- tai työnantajaedun mukaisen omavastuuosuuden.",
+  "providers": [
+    {
+      "id": "mehilainen",
+      "name": "Mehiläinen",
+      "city": "Tampere",
+      "website": "https://www.mehilainen.fi",
+      "bookingUrl": "https://www.mehilainen.fi/ajanvaraus",
+      "color": "#009B77",
+      "logo": "M",
+      "note": "Hinnat voivat vaihdella toimipisteittäin"
+    },
+    {
+      "id": "terveystalo",
+      "name": "Terveystalo",
+      "city": "Tampere",
+      "website": "https://www.terveystalo.com",
+      "bookingUrl": "https://www.terveystalo.com/fi/ajanvaraus/",
+      "color": "#0066CC",
+      "logo": "T",
+      "note": "Hinnat sisältävät ALV 25,5%"
+    },
+    {
+      "id": "pihlajalinna",
+      "name": "Pihlajalinna",
+      "city": "Tampere",
+      "website": "https://www.pihlajalinna.fi",
+      "bookingUrl": "https://www.pihlajalinna.fi/ajanvaraus",
+      "color": "#5B9E2A",
+      "logo": "P",
+      "note": "Hinnat voivat muuttua"
+    },
+    {
+      "id": "dextra",
+      "name": "Dextra",
+      "city": "Tampere",
+      "website": "https://www.dextra.fi",
+      "bookingUrl": "https://www.dextra.fi/ajanvaraus",
+      "color": "#E8430A",
+      "logo": "D",
+      "note": "Paikallinen toimija Tampereella"
+    },
+    {
+      "id": "attendo",
+      "name": "Attendo",
+      "city": "Tampere",
+      "website": "https://www.attendo.fi",
+      "bookingUrl": "https://www.attendo.fi/palvelut/",
+      "color": "#6366F1",
+      "logo": "A",
+      "note": "Attendo terveyskeskus Tampere"
+    },
+    {
+      "id": "coronaria",
+      "name": "Coronaria Uniklinikka",
+      "city": "Tampere",
+      "website": "https://www.coronaria.fi/uniklinikka",
+      "bookingUrl": "https://ajanvaraus.coronaria.fi/",
+      "color": "#EC4899",
+      "logo": "Co",
+      "note": "Erikoistunut unihäiriöihin – ei yleislääkärivastaanottoa"
+    },
+    {
+      "id": "aava",
+      "name": "Aava",
+      "city": "Tampere",
+      "website": "https://www.aava.fi",
+      "bookingUrl": "https://asiointi.aava.fi/fi/ajanvaraus",
+      "color": "#F59E0B",
+      "logo": "Aa",
+      "note": "Lääkärikeskus Aava – tarkista paikalliset toimipisteet"
+    }
+  ],
+  "services": [
+    {
+      "id": "gp_visit",
+      "category": "Lääkärikäynti",
+      "name": "Yleislääkäri, vastaanottokäynti",
+      "description": "Tavallinen lääkärin vastaanottokäynti",
+      "prices": {
+        "mehilainen": {
+          "price": 96,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "mehilainen.fi/hinnasto 2026-06-09",
+          "note": "Alk. 95.80 € (sis. poliklinikka- ja Kanta-maksu), 20 min",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 95
+            },
+            {
+              "date": "2026-04-01",
+              "price": 98
+            }
+          ]
+        },
+        "terveystalo": {
+          "price": 103,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "terveystalo.com/fi/asiakaspalvelu/hinnasto 2026-06-09",
+          "note": "Alk. 64 € + palvelumaksu 34.90 € + Kanta 3.70 € = ~102.60 €, 20 min",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 92
+            },
+            {
+              "date": "2026-04-01",
+              "price": 95
+            }
+          ]
+        },
+        "pihlajalinna": {
+          "price": 133,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "pihlajalinna.fi/asiakkaalle/hinnastot 2026-06-09",
+          "note": "Alk. 96 € + palvelumaksu 32.90 € + Kanta 4 € = ~133 €, 20 min",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 90
+            }
+          ]
+        },
+        "dextra": {
+          "price": 85,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 82
+            },
+            {
+              "date": "2026-04-01",
+              "price": 85
+            }
+          ]
+        },
+        "attendo": {
+          "price": 92,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 89
+            }
+          ]
+        },
+        "coronaria": {
+          "price": null,
+          "unit": null,
+          "verified": true,
+          "source": "coronaria.fi/uniklinikka 2026-06-09",
+          "note": "Coronaria Uniklinikka on unihäiriöiden erikoisklinikka – ei yleislääkärivastaanottoa",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": 122,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "aava.fi/asiakkaana/hinnastot 2026-06-09",
+          "note": "Alk. 83 € + palvelumaksu 34.90 € + Kanta 3.70 € = ~121.60 €, 20 min",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "gp_visit_online",
+      "category": "Lääkärikäynti",
+      "name": "Yleislääkäri, etävastaanotto",
+      "description": "Videovälitteinen tai chat-vastaanotto",
+      "prices": {
+        "mehilainen": {
+          "price": 57,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "mehilainen.fi/hinnasto 2026-06-09",
+          "note": "Yleislääkäri Digiklinikalla 57 € (ilman Kela-korvausta)",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 61,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "terveystalo.com/fi/asiakaspalvelu/hinnasto 2026-06-09",
+          "note": "Lääkäri-chat arkisin 60.70 €",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 77,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "pihlajalinna.fi/asiakkaalle/hinnastot 2026-06-09",
+          "note": "Chat ma-pe 58 € + chat palvelumaksu 14.50 € + Kanta 4 € = ~76.50 €",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "attendo": {
+          "price": 52,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": null,
+          "unit": null,
+          "verified": true,
+          "source": "coronaria.fi/uniklinikka 2026-06-09",
+          "note": "Ei yleislääkärivastaanottoa – erikoistunut unihäiriöihin",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": 55,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "aava.fi/asiakkaana/hinnastot 2026-06-09",
+          "note": "Lääkäri-chat arkisin ma-pe 54.60 €",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "specialist_visit",
+      "category": "Lääkärikäynti",
+      "name": "Erikoislääkäri, vastaanottokäynti",
+      "description": "Erikoislääkärin ensikäynti",
+      "prices": {
+        "mehilainen": {
+          "price": 163,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "mehilainen.fi/hinnasto 2026-06-09",
+          "note": "Alk. 163.10 € (sis. poliklinikka- ja Kanta-maksu), 30 min",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 168
+            }
+          ]
+        },
+        "terveystalo": {
+          "price": 147,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "terveystalo.com/fi/asiakaspalvelu/hinnasto 2026-06-09",
+          "note": "Alk. 108.50 € + palvelumaksu 34.90 € + Kanta 3.70 € = ~147 €, 30 min",
+          "lastChanged": "2026-06-09",
+          "history": [
+            {
+              "date": "2026-01-01",
+              "price": 165
+            }
+          ]
+        },
+        "pihlajalinna": {
+          "price": 160,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 155,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 165,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 181,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "coronaria.fi/uniklinikka/hinnat-ja-ohjeita 2026-06-09",
+          "note": "Alk. 149 € + palvelumaksu 28 € + Kanta 4 € = 181 €, 30 min. Erikoisala: unihäiriöt",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": 204,
+          "unit": "€/käynti",
+          "verified": true,
+          "source": "aava.fi/asiakkaana/hinnastot 2026-06-09",
+          "note": "Alk. 165 € + palvelumaksu 34.90 € + Kanta 3.70 € = ~203.60 €, 30 min",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "specialist_followup",
+      "category": "Lääkärikäynti",
+      "name": "Erikoislääkäri, kontrollikäynti",
+      "description": "Erikoislääkärin seurantakäynti",
+      "prices": {
+        "mehilainen": {
+          "price": 145,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 138,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 130,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 125,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 135,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": null,
+          "unit": null,
+          "verified": true,
+          "source": "coronaria.fi/uniklinikka 2026-06-09",
+          "note": "Ei yleistä erikoislääkärivastaanottoa – vain uniasiantuntijat",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": 175,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "occupational_health",
+      "category": "Lääkärikäynti",
+      "name": "Työterveyslääkäri",
+      "description": "Työterveyteen liittyvä käynti",
+      "prices": {
+        "mehilainen": {
+          "price": 105,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 100,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 95,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "attendo": {
+          "price": 98,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 95,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "nurse_visit",
+      "category": "Lääkärikäynti",
+      "name": "Sairaanhoitaja, vastaanotto",
+      "description": "Sairaanhoitajan tai terveydenhoitajan käynti",
+      "prices": {
+        "mehilainen": {
+          "price": 55,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 52,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 48,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 45,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 50,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 47,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": 52,
+          "unit": "€/käynti",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "lab_pvk",
+      "category": "Laboratoriotutkimukset",
+      "name": "Perusverenkuva (B-PVK)",
+      "description": "Veren solujen määrä ja hemoglobiini",
+      "prices": {
+        "mehilainen": {
+          "price": 38,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 35,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 33,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 30,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 34,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 32,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "lab_crp",
+      "category": "Laboratoriotutkimukset",
+      "name": "CRP (tulehdusarvo)",
+      "description": "Tulehduksen osoitin verestä",
+      "prices": {
+        "mehilainen": {
+          "price": 28,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 26,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 24,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 22,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 25,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 23,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "lab_cholesterol",
+      "category": "Laboratoriotutkimukset",
+      "name": "Kolesteroli (fP-Kol-Tot)",
+      "description": "Kokonaiskolesteroli paastonäytteestä",
+      "prices": {
+        "mehilainen": {
+          "price": 40,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 38,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 35,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 32,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 36,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 34,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "lab_glucose",
+      "category": "Laboratoriotutkimukset",
+      "name": "Verensokeri (fP-Gluk)",
+      "description": "Paastoverensokeri",
+      "prices": {
+        "mehilainen": {
+          "price": 22,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 20,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 18,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 17,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 19,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 18,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "lab_tsh",
+      "category": "Laboratoriotutkimukset",
+      "name": "Kilpirauhashormooni (S-TSH)",
+      "description": "Kilpirauhasen toiminnan mittaus",
+      "prices": {
+        "mehilainen": {
+          "price": 48,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 45,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 42,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 39,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 44,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 41,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "lab_urine",
+      "category": "Laboratoriotutkimukset",
+      "name": "Virtsakoe (U-Stix)",
+      "description": "Virtsan perustutkimus liuskatestillä",
+      "prices": {
+        "mehilainen": {
+          "price": 20,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 18,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 16,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 15,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 17,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 16,
+          "unit": "€/näyte",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "imaging_chest_xray",
+      "category": "Kuvantaminen",
+      "name": "Keuhkojen röntgen",
+      "description": "PA-projektiokuva, 1–2 suuntaa",
+      "prices": {
+        "mehilainen": {
+          "price": 95,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 89,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 82,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 75,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 85,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 79,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "imaging_ultrasound",
+      "category": "Kuvantaminen",
+      "name": "Ultraääni, nivel tai pehmytkudos",
+      "description": "Yhden alueen ultraäänitutkimus",
+      "prices": {
+        "mehilainen": {
+          "price": 185,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 175,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 160,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 150,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "coronaria": {
+          "price": 155,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "imaging_xray_limb",
+      "category": "Kuvantaminen",
+      "name": "Röntgen, raaja tai nivel",
+      "description": "Käden, jalan, polven tai olkapään röntgen",
+      "prices": {
+        "mehilainen": {
+          "price": 85,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 79,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 72,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 68,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 75,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 70,
+          "unit": "€/tutkimus",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "proc_suture",
+      "category": "Toimenpiteet",
+      "name": "Haavan ompelu (pieni, ≤3 cm)",
+      "description": "Pienen haavan sulkeminen ommelmalla",
+      "prices": {
+        "mehilainen": {
+          "price": 190,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 178,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 165,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 155,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 170,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 160,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "proc_mole_removal",
+      "category": "Toimenpiteet",
+      "name": "Luomen tai ihottuman poisto",
+      "description": "Pienen ihopoimun tai luomen kirurginen poisto",
+      "prices": {
+        "mehilainen": {
+          "price": 220,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 210,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 195,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 185,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 200,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 190,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "proc_ear_wash",
+      "category": "Toimenpiteet",
+      "name": "Korvien huuhtelu",
+      "description": "Korvavahatulpan poisto huuhtelulla",
+      "prices": {
+        "mehilainen": {
+          "price": 72,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 68,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 62,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 58,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 65,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 60,
+          "unit": "€/toimenpide",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "proc_vaccine",
+      "category": "Toimenpiteet",
+      "name": "Rokotus (pistospalkkio)",
+      "description": "Rokotuksen antaminen – ei sisällä rokotteen hintaa",
+      "prices": {
+        "mehilainen": {
+          "price": 25,
+          "unit": "€/kerta",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "terveystalo": {
+          "price": 23,
+          "unit": "€/kerta",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": 20,
+          "unit": "€/kerta",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "dextra": {
+          "price": 18,
+          "unit": "€/kerta",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "attendo": {
+          "price": 22,
+          "unit": "€/kerta",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "coronaria": {
+          "price": 19,
+          "unit": "€/kerta",
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": "arvio",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    },
+    {
+      "id": "sleep_apnea_study",
+      "category": "Erikoistutkimukset",
+      "name": "Uniapneatutkimus (suppea)",
+      "description": "Kotona tehtävä yöpolygrafia uniapnean diagnosointiin",
+      "prices": {
+        "mehilainen": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "terveystalo": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "pihlajalinna": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "dextra": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "attendo": {
+          "price": null,
+          "unit": null,
+          "verified": false,
+          "source": null,
+          "lastChanged": null,
+          "history": []
+        },
+        "coronaria": {
+          "price": 259,
+          "unit": "€/tutkimus",
+          "verified": true,
+          "source": "coronaria.fi/uniklinikka/hinnat-ja-ohjeita 2026-06-09",
+          "note": "Suppea uniapneatutkimus 259 € – ei lisämaksuja verkkokaupasta tilattaessa",
+          "lastChanged": "2026-06-09",
+          "history": []
+        },
+        "aava": {
+          "price": null,
+          "unit": null,
+          "verified": true,
+          "source": "aava.fi 2026-06-09",
+          "note": "Ei Uniklinikka-palvelua",
+          "lastChanged": "2026-06-09",
+          "history": []
+        }
+      }
+    }
+  ]
+}

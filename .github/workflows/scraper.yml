@@ -1,0 +1,43 @@
+name: Päivitä hinnat viikoittain
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Joka maanantai klo 06:00 UTC
+  workflow_dispatch:        # Manuaalinen ajo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Asenna Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Asenna riippuvuudet
+        run: |
+          pip install playwright requests beautifulsoup4 lxml
+          playwright install chromium
+
+      - name: Aja scraper
+        run: python scraper_playwright.py
+
+      - name: Tarkista muutokset
+        id: changes
+        run: |
+          git diff --quiet src/data/prices.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commitoi päivitykset
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/prices.json
+          git commit -m "chore: päivitä hinnat automaattisesti $(date +%Y-%m-%d)"
+          git push
